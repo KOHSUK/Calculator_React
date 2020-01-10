@@ -108,7 +108,7 @@ const execOperation = (state, action) => {
     let num_1 = 0;
 
     if (state.previousKey === "INPUT" && state.inputCnt > 1) {
-        num_1 = execCalc(state.number_1, state.number_2, action.type);
+        num_1 = execCalc(state.number_1, state.number_2, state.operator);
     } else {
         num_1  = state.number_1;
     }
